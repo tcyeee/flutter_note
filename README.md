@@ -1,9 +1,13 @@
 # flutter_note
 
-从0到1, 一个Java开发的flutter学习笔记
+从0到1, 一个Java开发的flutter学习笔记 , 这里是完全重写了一遍dalao的项目[点击查看]([https://github.com/phoenixsky/fun_android_flutter](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Fphoenixsky%2Ffun_android_flutter)) , 同时, 感谢dalao的代码(鞠躬) , 开源万岁!
 
 
 
+然鹅 , 但凡好一点的项目大都不会写注释, 那我就正好一边学, 一边从小白的角度用注释写上笔记和个人对代码的理解, 但愿能对正在学习的各位提供一点帮助
+
+
+<br><br>
 
 
 
@@ -14,17 +18,17 @@
 
 考虑kotlin+swift主要是因为系统稳定 / 生态丰富, 而考虑flutter则是因为开发效率
 
+  
+
+<br><br>
 
 
 
+#### 2/ 对flutter的一些担忧
 
+<br>
 
-
-#### 2/ flutter
-
-
-
-**关于flutter和苹果的关系**
+1. **关于flutter和苹果的关系**
 
 个人还是很看好flutter的发展前景的, 网上有人担心flutter挤压了ios原生开发者的生存空间, 从而苹果爸爸出手制约flutter的发展, 但是在我看来这些观点都是无本之木, 一段时间过后自然会消失
 
@@ -44,9 +48,9 @@
 
 再者flutter最终还是要在App Store上架, 需要依赖ios的指令集, 要遵守苹果制定的开发规范, 在ios端上苹果的永远卡着futter的命脉, 只要一条规则就能让flutter凉凉, 但是封杀有可能威胁到自己的马化腾操作苹果应该做不出来, 这点大可放心
 
+<br>
 
-
-**关于fluutter运行效率**
+2. **关于fluutter运行效率**
 
 flutter相比RN和WEEX之类的跨平台框架, 性能提升了一个等级, 能够到达接近原生的程度, 用作独立开发的小软件绰绰有余, 但如果要追求极致体验, 自然永远不可能达到原生的高度
 
@@ -56,9 +60,9 @@ flutter相比RN和WEEX之类的跨平台框架, 性能提升了一个等级, 能
 
 
 
+<br>
 
-
-**关于flutter的现状**
+3. **关于flutter的现状**
 
 flutter的开发体验太差, 随便一个布局都需要写下大量代码, 即便是习惯了又臭又长的Java编程, 看到里面的花式嵌套也是各种酸爽 ,  好在dart万物皆对象,  花点时间还是可以整理好的
 
