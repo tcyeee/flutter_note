@@ -1,16 +1,74 @@
-# fun_flutter_demo
+# flutter_note
 
-A new Flutter project.
+从0到1, 一个Java开发的flutter学习笔记
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+#### 1/ 前言
+
+作为一个后端开发, 想转化做独立软件作者, 需要补充学习哪些语言? , 之前还在纠结学习 `Kotlin` + `swift` ,但是现在已经确定要入flutter坑了
+
+考虑kotlin+swift主要是因为系统稳定 / 生态丰富, 而考虑flutter则是因为开发效率
+
+
+
+
+
+
+
+#### 2/ flutter
+
+
+
+**关于flutter和苹果的关系**
+
+个人还是很看好flutter的发展前景的, 网上有人担心flutter挤压了ios原生开发者的生存空间, 从而苹果爸爸出手制约flutter的发展, 但是在我看来这些观点都是无本之木, 一段时间过后自然会消失
+
+
+
+而真正触碰到苹果红线的是热更新, 当年JSPatch被大范围封杀是因为这个, 如果不加以管制, 刚审核通过的新闻app摇身一变成了菠菜app, 审核制度便形同虚设, 最近苹果频频加大H5的限制力度也是因为这个, ---不容易被管控
+
+
+
+反观flutter官方可是非常聪明, 尽管开发者希望热更新的声音不断, 但是官网迟迟不给支持, 究其到底还是对苹果开发者条款的忌惮, 如果失去了ios这个平台, flutter最大的优势将不复存在, 直接凉凉
+
+
+
+那么苹果会不会对flutter下手呢, 我觉得不会, 第一, flutter的出现大大丰富了ios的开发生态, 制衡安卓的同时带来App Store的收入,  对苹果而言是一大好事, 又何故要去封杀
+
+
+
+再者flutter最终还是要在App Store上架, 需要依赖ios的指令集, 要遵守苹果制定的开发规范, 在ios端上苹果的永远卡着futter的命脉, 只要一条规则就能让flutter凉凉, 但是封杀有可能威胁到自己的马化腾操作苹果应该做不出来, 这点大可放心
+
+
+
+**关于fluutter运行效率**
+
+flutter相比RN和WEEX之类的跨平台框架, 性能提升了一个等级, 能够到达接近原生的程度, 用作独立开发的小软件绰绰有余, 但如果要追求极致体验, 自然永远不可能达到原生的高度
+
+
+
+从这点来看flutter大概还只是适合独立开发者, 或者成为小公司压榨员工的利器, 大公司最求用户体验也不会去用flutter, 而官方宣传的闲鱼饿了么这些招牌软件无一不是混合开发, flutter只是用来做部分页面 , 目前还没有发现知名度比较高的纯flutter软件
+
+
+
+
+
+**关于flutter的现状**
+
+flutter的开发体验太差, 随便一个布局都需要写下大量代码, 即便是习惯了又臭又长的Java编程, 看到里面的花式嵌套也是各种酸爽 ,  好在dart万物皆对象,  花点时间还是可以整理好的
+
+
+
+然而真正会影响开发的是社区, 如同小程序刚出现的时候蹭热度去学, 被里面一些莫名的bug打的一头包, 类似view第一行如果不空出来就报错, 改配置文件不留下空大括号就报错之类的玄学bug不要太多, 而且在社区在论坛怎么都找不到解释, 这个时候就会怀念java面向百度编程那种无所不知的安全感了
+
+
+
+当然现在flutter社区正在逐渐壮大, 只是还是免不了踩到那种令人秃头的开荒bug,  至于学不学flutter那就见仁见智了
+
+
+
