@@ -1,6 +1,12 @@
 # flutter_note
 
-从0到1, 一个Java开发的flutter学习笔记
+从0到1, 一个Java开发的flutter学习笔记 , 这里是完全重写了一遍dalao的项目[点击查看]([https://github.com/phoenixsky/fun_android_flutter](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Fphoenixsky%2Ffun_android_flutter)) , 同时, 感谢dalao的代码(鞠躬) , 开源万岁!
+
+
+
+然鹅 , 但凡好一点的项目大都不会写注释, 那我就正好一边学, 一边从小白的角度用注释写上笔记和个人对代码的理解, 但愿能对正在学习的各位提供一点帮助
+
+
 <br><br>
 
 
