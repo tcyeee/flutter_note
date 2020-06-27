@@ -14,10 +14,8 @@ class App extends StatelessWidget {
       /// 这个参数用来去除右上角的'debug'横幅
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      /// 这里使用了定义的全局主题
+//      theme: themeModel.themeData(),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
