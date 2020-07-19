@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fun_flutter_demo/test/1.dart';
-import 'package:fun_flutter_demo/test/base.dart';
+import 'package:fun_flutter_demo/test/3.dart';
 
 main() => runApp(MyApp());
 
@@ -11,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         // 这个参数用来去除右上角的'debug'横幅
         debugShowCheckedModeBanner: false,
-        home: Scaffold(appBar: AppBar(title: Text('导航栏上的东西')), body: test1()),
+        home: Scaffold(appBar: AppBar(title: Text('导航栏上的东西')), body: test3()),
         theme: ThemeData(primarySwatch: Colors.cyan));
   }
 }
