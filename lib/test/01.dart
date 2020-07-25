@@ -7,6 +7,7 @@ class test1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Container(
+          margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
             alignment: Alignment.center,
             height: 300.0,
             width: 300.0,

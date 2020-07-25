@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fun_flutter_demo/test/mock.dart';
 
-class StateDemo extends StatelessWidget {
+class State1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 400,
-      color: Colors.red[100],
+      color: Colors.green[100],
       child: Stack(children: <Widget>[
         Align(
             alignment: Alignment.bottomCenter,
