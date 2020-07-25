@@ -5,6 +5,8 @@ import 'package:fun_flutter_demo/test/03.dart';
 import 'package:fun_flutter_demo/test/04.dart';
 import 'package:fun_flutter_demo/test/06.dart';
 import 'package:fun_flutter_demo/test/07.dart';
+import 'package:fun_flutter_demo/test/08.dart';
+import 'package:fun_flutter_demo/test/09.dart';
 
 main() => runApp(MyApp());
 
@@ -23,9 +25,12 @@ class MyApp extends StatelessWidget {
 
 Widget _getList() {
   return ListView(children: <Widget>[
+    _addOne(CardDemo(), Colors.white, "08:卡片布局"),
+    SizedBox(height: 300),
+    _addOne(AspectDemo(), Colors.red[100], "07:固定比例"),
     _addOne(State1(), Colors.red[100], "06:绝对定位"),
     _addOne(ListSyn2(), Colors.yellow[100], "05:横纵混合布局"),
-// 布局不可用
+// 瀑布流布局(两个listView不可叠加)
 // _addOne(GridView(), Colors.green[100], "04:list1"),
     _addOne(list1(), Colors.green[100], "04:list布局"),
     _addOne(test3(), Colors.red[100], "03:头像2"),
