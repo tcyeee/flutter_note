@@ -9,6 +9,7 @@ import 'package:fun_flutter_demo/test/08.dart';
 import 'package:fun_flutter_demo/test/09.dart';
 import 'package:fun_flutter_demo/test/10.dart';
 import 'package:fun_flutter_demo/test/11.dart';
+import 'package:fun_flutter_demo/test/12.dart';
 
 main() => runApp(MyApp());
 
@@ -27,8 +28,10 @@ class MyApp extends StatelessWidget {
 
 Widget _getList() {
   return ListView(children: <Widget>[
-    _addOne(SynPageStatePage(), Colors.green[100], "10:动态页面"),
+    _addOne(SynPage2(), Colors.red[100], "12:页面切换"),
     SizedBox(height: 300),
+    _addOne(SynPage2(), Colors.red[100], "11:动态页面2"),
+    _addOne(SynPageStatePage(), Colors.green[100], "10:动态页面"),
     _addOne(WrapDemo(), Colors.red[100], "09:流式布局"),
     _addOne(CardDemo(), Colors.white, "08:卡片布局"),
     _addOne(AspectDemo(), Colors.red[100], "07:固定比例"),
