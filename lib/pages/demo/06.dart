@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fun_flutter_demo/test/mock.dart';
+import 'package:fun_flutter_demo/common/mock/mock.dart';
 
 class ListSyn2 extends StatelessWidget {
   @override

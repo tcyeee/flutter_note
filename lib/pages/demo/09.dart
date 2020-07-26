@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../common/mock/mock.dart';
 import '03.dart';
-import 'mock.dart';
 
 class CardDemo extends StatelessWidget {
   @override

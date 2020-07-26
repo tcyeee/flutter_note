@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'module.dart';
+import '../../common/module/broker_tag.dart';
 
 class WrapDemo extends StatelessWidget {
   @override
