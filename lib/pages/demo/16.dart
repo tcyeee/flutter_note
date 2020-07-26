@@ -8,7 +8,8 @@ class DemoSinglePage3 extends StatelessWidget {
         child: RaisedButton(
             child: Text("点击跳转到一个单页面"),
             onPressed: () {
-              Navigator.pushNamed(context, '/newPage');
+              // 带值跳转
+              Navigator.pushNamed(context, '/newPage', arguments: {"id": 123});
             }));
   }
 }
