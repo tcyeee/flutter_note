@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+// 带值跳转的目标页面
 class DemoSinglePage2 extends StatelessWidget {
   final arguments;
 
@@ -13,8 +14,8 @@ class DemoSinglePage2 extends StatelessWidget {
         body: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text("一个测试单元面的内容啊"),
-              Text('->${arguments == null ? '0' : arguments['id']}'),
+              Text("带值跳转的目标页面"),
+              Text('->这是带的参数: ${arguments == null ? '0' : arguments['id']}'),
             ]));
   }
 }

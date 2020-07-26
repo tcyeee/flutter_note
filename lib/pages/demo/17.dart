@@ -1,15 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class DemoSinglePage3 extends StatelessWidget {
+class DemoSinglePage4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
         child: RaisedButton(
-            child: Text("带值跳转到一个单页面"),
+            child: Text("不带值跳转到一个单页面"),
             onPressed: () {
-              // 带值跳转
-              Navigator.pushNamed(context, '/newPage', arguments: {"id": 123});
+              // 不带值跳转
+              Navigator.pushNamed(context, '/toNewPageWithoutData');
             }));
   }
 }
