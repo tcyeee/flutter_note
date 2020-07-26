@@ -17,7 +17,6 @@ class _MyHomePageState extends State<MyHomePage> {
     ListSyn(),
     Text("kjkj"),
     Text("kjkj"),
-    DemoSinglePage3(),
   ];
 
   @override
@@ -47,8 +46,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   icon: Icon(Icons.home), title: Text("hme")),
               BottomNavigationBarItem(
                   icon: Icon(Icons.home), title: Text("hoe")),
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.toc), title: Text("跳转")),
             ]));
   }
 }

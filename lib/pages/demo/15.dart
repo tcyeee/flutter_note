@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // 带值跳转的目标页面
-class DemoSinglePage2 extends StatelessWidget {
+class TagDemoSinglePage2 extends StatelessWidget {
   final arguments;
 
-  DemoSinglePage2({this.arguments});
+  TagDemoSinglePage2({this.arguments});
 
   @override
   Widget build(BuildContext context) {
