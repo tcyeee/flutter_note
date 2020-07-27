@@ -3,14 +3,21 @@ import 'package:fun_flutter_demo/pages/demo/05.dart';
 import 'package:fun_flutter_demo/pages/demo/demo_home.dart';
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key}) : super(key: key);
+  final index;
+
+  MyHomePage({Key key, this.index = 0}) : super(key: key);
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _MyHomePageState createState() => _MyHomePageState(index);
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int currentIndex = 1;
+  int currentIndex = 0;
+
+  _MyHomePageState(index) {
+    this.currentIndex = index;
+  }
+
   List _pageList = [
     DemoHomePage(),
     ListSyn(),

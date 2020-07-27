@@ -42,8 +42,25 @@ class _DemoHomePageState extends State<DemoHomePage> {
         _addOne(context, DemoSinglePage4(), "不传值跳转"),
         _addOne(context, DemoSinglePage3(), "传值跳转"),
         _addOne(context, DemoWithData20(), "传值动态跳转"),
+        _toPage(context, "跳转到登录页面", "/toLogin"),
+        _toPage(context, "跳转到注册页面", "/toRegisterFirst"),
+        _toPage(context, "自定义tab属性", "/toAppbarDemo"),
       ])
     ]);
+  }
+
+  // 直接跳转
+  Widget _toPage(BuildContext baseContent, String title, String url) {
+    return Container(
+        margin: EdgeInsets.fromLTRB(0, 0, 10, 0),
+        child: MaterialButton(
+            color: Colors.red[100],
+            onPressed: () {
+              Navigator.pushNamed(baseContent, url);
+            },
+            child: Text(title,
+                style: TextStyle(
+                    color: Colors.black87, fontWeight: FontWeight.w300))));
   }
 
   // 添加画布

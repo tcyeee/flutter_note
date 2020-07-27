@@ -8,7 +8,7 @@ class DemoWithData20 extends StatelessWidget {
         child: RaisedButton(
             child: Text("带值跳转到一个动态单页面"),
             onPressed: () {
-              // 不带值跳转
+              // 带值跳转
               Navigator.pushNamed(context, '/toNewPage',
                   arguments: {"id": 123});
             }));
