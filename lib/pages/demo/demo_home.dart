@@ -14,6 +14,7 @@ import 'package:fun_flutter_demo/pages/demo/12.dart';
 import '14.dart';
 import '16.dart';
 import '17.dart';
+import '20.dart';
 import 'demo_single_page.dart';
 
 class DemoHomePage extends StatefulWidget {
@@ -40,6 +41,7 @@ class _DemoHomePageState extends State<DemoHomePage> {
         _addOne(context, DiyReturn(), "自定义返回按钮"),
         _addOne(context, DemoSinglePage4(), "不传值跳转"),
         _addOne(context, DemoSinglePage3(), "传值跳转"),
+        _addOne(context, DemoWithData20(), "传值动态跳转"),
       ])
     ]);
   }
