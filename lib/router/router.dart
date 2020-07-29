@@ -9,6 +9,7 @@ import 'package:fun_flutter_demo/pages/demo/18.dart';
 import 'package:fun_flutter_demo/pages/demo/19.dart';
 import 'package:fun_flutter_demo/pages/demo/21.dart';
 import 'package:fun_flutter_demo/pages/demo/22.dart';
+import 'package:fun_flutter_demo/pages/demo/24.dart';
 import 'package:fun_flutter_demo/router/router_app_bar.dart';
 
 // 配置路由
@@ -30,6 +31,7 @@ final router = {
   '/toRegisterThird': (context) => RegisterThird(),
   '/toAppbarDemo': (context) => AppbarDemo(),
   '/toSwiftTabDemo': (context) => SwiftTabDemo(),
+  '/toTabDemo2': (context) => TabDemo2(),
 };
 
 // ignore: missing_return, top_level_function_literal_block
