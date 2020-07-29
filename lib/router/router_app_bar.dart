@@ -29,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-//        appBar: AppBar(title: Text('导航栏上的东西')),
+        appBar: AppBar(title: Text('导航栏上的东西')),
         body: _pageList[currentIndex],
         bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
