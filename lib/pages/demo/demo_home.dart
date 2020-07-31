@@ -15,6 +15,7 @@ import '14.dart';
 import '16.dart';
 import '17.dart';
 import '20.dart';
+import '26.dart';
 import 'demo_single_page.dart';
 
 class DemoHomePage extends StatefulWidget {
@@ -48,6 +49,7 @@ class _DemoHomePageState extends State<DemoHomePage> {
         _toPage(context, "tab切换", "/toSwiftTabDemo"),
         _toPage(context, "tab切换2", "/toTabDemo2"),
         _toPage(context, "抽屉", "/toDrawerDemo1"),
+        _addOne(context, ButtonDemo(), "按钮"),
       ])
     ]);
   }
