@@ -47,6 +47,7 @@ class _DemoHomePageState extends State<DemoHomePage> {
         _toPage(context, "自定义tab属性", "/toAppbarDemo"),
         _toPage(context, "tab切换", "/toSwiftTabDemo"),
         _toPage(context, "tab切换2", "/toTabDemo2"),
+        _toPage(context, "抽屉", "/toDrawerDemo1"),
       ])
     ]);
   }
