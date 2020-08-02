@@ -1,3 +1,4 @@
+import 'package:date_format/date_format.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fun_flutter_demo/common/mock/mock.dart';
@@ -22,6 +23,32 @@ class _FormDamoState extends State<FormDamo> {
     super.initState();
     _username.text = 'tcyeee';
     _password.text = 'tcyeee';
+  }
+
+  // 异步获取选中的日期
+  DateTime _selectDate = DateTime.now();
+  _showDatePicker() async {
+    DateTime _result = await showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(2000),
+      lastDate: DateTime(2100),
+    );
+    setState(() {
+      this._selectDate = _result == null ? DateTime.now() : _result;
+    });
+  }
+
+  // 异步获取选中的时间
+  TimeOfDay _selectTime = TimeOfDay.now();
+  _showTimePicker() async {
+    TimeOfDay _result = await showTimePicker(
+      context: context,
+      initialTime: TimeOfDay.now(),
+    );
+    setState(() {
+      this._selectTime = _result == null ? TimeOfDay.now() : _result;
+    });
   }
 
   @override
@@ -126,6 +153,36 @@ class _FormDamoState extends State<FormDamo> {
               ),
             ],
           ),
+          Divider(),
+          SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              InkWell(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text("${formatDate(_selectDate, [yyyy,'年',mm,'月',dd,'日'])}"),
+                    Icon(Icons.arrow_drop_down),
+                  ],
+                ),
+                onTap: _showDatePicker,
+              ),
+              SizedBox(width: 20),
+              InkWell(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+//                    Text("${formatDate(_selectTime, [yyyy,'年',mm,'月',dd,'日'])}"),
+                    Text("${_selectTime.format(context)}"),
+                    Icon(Icons.arrow_drop_down),
+                  ],
+                ),
+                onTap: _showTimePicker,
+              ),
+            ],
+          ),
+          SizedBox(height: 20),
           Divider(),
           Container(
               width: double.infinity,
