@@ -1,6 +1,7 @@
 import 'package:date_format/date_format.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:fun_flutter_demo/common/mock/mock.dart';
 
 class FormDamo extends StatefulWidget {
@@ -27,6 +28,7 @@ class _FormDamoState extends State<FormDamo> {
 
   // 异步获取选中的日期
   DateTime _selectDate = DateTime.now();
+
   _showDatePicker() async {
     DateTime _result = await showDatePicker(
       context: context,
@@ -49,6 +51,51 @@ class _FormDamoState extends State<FormDamo> {
     setState(() {
       this._selectTime = _result == null ? TimeOfDay.now() : _result;
     });
+  }
+
+  DateTime _selectDate2 = DateTime.now();
+  _showDatePicker2() {
+    DatePicker.showDatePicker(context,
+        showTitleActions: true,
+        locale: LocaleType.zh,
+        minTime: DateTime(2018, 3, 5),
+        maxTime: DateTime(2100, 1, 1),
+        currentTime: DateTime.now(),
+        theme: DatePickerTheme(
+            headerColor: Colors.orange,
+            backgroundColor: Colors.blue,
+            itemStyle: TextStyle(
+                color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
+            doneStyle: TextStyle(color: Colors.white, fontSize: 16)),
+        onConfirm: (date) {
+          setState(() {
+            this._selectDate2 = date == null ? DateTime.now() : date;
+          });
+    });
+  }
+
+  // 异步获取选中的时间
+  DateTime _selectTime2 = DateTime.now();
+
+  _showTimePicker2() {
+    DatePicker.showTimePicker(
+      context,
+      currentTime: DateTime.now(),
+      locale: LocaleType.zh,
+      showTitleActions: true,
+      showSecondsColumn: false,
+      theme: DatePickerTheme(
+          headerColor: Colors.orange,
+          backgroundColor: Colors.blue,
+          itemStyle: TextStyle(
+              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
+          doneStyle: TextStyle(color: Colors.white, fontSize: 16)),
+      onConfirm: (date) {
+        setState(() {
+          this._selectTime2 = date == null ? DateTime.now() : date;
+        });
+      },
+    );
   }
 
   @override
@@ -162,7 +209,8 @@ class _FormDamoState extends State<FormDamo> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text("${formatDate(_selectDate, [yyyy,'年',mm,'月',dd,'日'])}"),
+                    Text("${formatDate(
+                        _selectDate, [yyyy, '年', mm, '月', dd, '日'])}"),
                     Icon(Icons.arrow_drop_down),
                   ],
                 ),
@@ -173,12 +221,42 @@ class _FormDamoState extends State<FormDamo> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-//                    Text("${formatDate(_selectTime, [yyyy,'年',mm,'月',dd,'日'])}"),
                     Text("${_selectTime.format(context)}"),
                     Icon(Icons.arrow_drop_down),
                   ],
                 ),
                 onTap: _showTimePicker,
+              ),
+            ],
+          ),
+          SizedBox(height: 20),
+          Divider(),
+          SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              InkWell(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text("${formatDate(
+                        _selectDate2, [yyyy, '年', mm, '月', dd, '日'])}"),
+                    Icon(Icons.arrow_drop_down),
+                  ],
+                ),
+                onTap: _showDatePicker2,
+              ),
+              SizedBox(width: 20),
+              InkWell(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text("${formatDate(
+                        _selectTime2, [HH, '点', nn, '分', ss, '秒'])}"),
+                    Icon(Icons.arrow_drop_down),
+                  ],
+                ),
+                onTap: _showTimePicker2,
               ),
             ],
           ),
