@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:fun_flutter_demo/common/module/broker_dialog.dart';
 
 class DialogDemo extends StatefulWidget {
   @override
@@ -82,8 +83,15 @@ class _DialogDemoState extends State<DialogDemo> {
         timeInSecForIosWeb: 3,
         backgroundColor: Colors.green,
         textColor: Colors.white,
-        fontSize: 16.0
-    );
+        fontSize: 16.0);
+  }
+
+  _alertDialog5() async {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return DiyDialog();
+        });
   }
 
   @override
@@ -96,6 +104,7 @@ class _DialogDemoState extends State<DialogDemo> {
           RaisedButton(onPressed: _alertDialog2, child: Text("选择弹窗")),
           RaisedButton(onPressed: _alertDialog3, child: Text("底部弹窗")),
           RaisedButton(onPressed: _alertDialog4, child: Text("弹出提示")),
+          RaisedButton(onPressed: _alertDialog5, child: Text("自定义弹窗")),
         ]));
   }
 }
