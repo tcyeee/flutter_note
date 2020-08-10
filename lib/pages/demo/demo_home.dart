@@ -18,6 +18,7 @@ import '20.dart';
 import '26.dart';
 import '27.dart';
 import '28.dart';
+import '29.dart';
 import 'demo_single_page.dart';
 
 class DemoHomePage extends StatefulWidget {
@@ -54,6 +55,7 @@ class _DemoHomePageState extends State<DemoHomePage> {
         _addOne(context, ButtonDemo(), "按钮"),
         _addOne(context, FormDamo(), "表单"),
         _addOne(context, DialogDemo(), "弹窗"),
+        _addOne(context, DataDemo(), "数据请求"),
       ])
     ]);
   }
