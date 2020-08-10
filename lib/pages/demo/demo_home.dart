@@ -1,16 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fun_flutter_demo/pages/demo/01.dart';
-import 'package:fun_flutter_demo/pages/demo/02.dart';
-import 'package:fun_flutter_demo/pages/demo/03.dart';
-import 'package:fun_flutter_demo/pages/demo/04.dart';
-import 'package:fun_flutter_demo/pages/demo/06.dart';
-import 'package:fun_flutter_demo/pages/demo/07.dart';
-import 'package:fun_flutter_demo/pages/demo/08.dart';
-import 'package:fun_flutter_demo/pages/demo/09.dart';
-import 'package:fun_flutter_demo/pages/demo/10.dart';
-import 'package:fun_flutter_demo/pages/demo/11.dart';
-import 'package:fun_flutter_demo/pages/demo/12.dart';
+import '01.dart';
+import '02.dart';
+import '03.dart';
+import '04.dart';
+import '06.dart';
+import '07.dart';
+import '08.dart';
+import '09.dart';
+import '10.dart';
+import '11.dart';
+import '12.dart';
 import '14.dart';
 import '16.dart';
 import '17.dart';
@@ -19,6 +19,7 @@ import '26.dart';
 import '27.dart';
 import '28.dart';
 import '29.dart';
+import '30.dart';
 import 'demo_single_page.dart';
 
 class DemoHomePage extends StatefulWidget {
@@ -56,6 +57,7 @@ class _DemoHomePageState extends State<DemoHomePage> {
         _addOne(context, FormDamo(), "表单"),
         _addOne(context, DialogDemo(), "弹窗"),
         _addOne(context, DataDemo(), "数据请求"),
+        _addOne(context, DioDateDemo(), "Dio数据请求"),
       ])
     ]);
   }

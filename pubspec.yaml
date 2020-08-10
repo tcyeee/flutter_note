@@ -39,6 +39,7 @@ dependencies:
   fluttertoast: ^7.0.2
   # http
   http: ^0.12.2
+  dio: ^3.0.10
 
   # State
   provider: 4.0.3
@@ -54,7 +55,6 @@ dependencies:
 
   # Data
   #  json_annotation: ^2.4.0
-  dio: ^3.0.1
   dio_cookie_manager: ^1.0.0
   cookie_jar: ^1.0.0
   shared_preferences: ^0.5.3+5
